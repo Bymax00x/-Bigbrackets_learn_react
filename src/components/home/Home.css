@@ -17,5 +17,19 @@ main {
 }
 .right {
   grid-area: box2;
-  text-align: center;
+}
+
+.articles {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  grid-template-areas: " box1 box2";
+}
+
+.articles__cources {
+  grid-area: box1;
+}
+
+.articles__calender {
+  grid-area: box2;
 }
