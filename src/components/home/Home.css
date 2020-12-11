@@ -13,7 +13,6 @@ main {
 }
 .left {
   grid-area: box1;
-  text-align: center;
 }
 .right {
   grid-area: box2;
@@ -22,7 +21,7 @@ main {
 .articles {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 0.2fr;
+  grid-template-columns: 1fr 0.4fr;
   grid-template-areas: " box1 box2";
 }
 

@@ -1,18 +1,22 @@
 import React from "react";
+import Cources from "../cources/Cources";
 import Header from "../header/Header";
+import LeftSidebar from "../leftSidebar/LeftSidebar";
 import RightSidebar from "../RightSidebar";
 import "./Home.css";
 
 const Home = () => {
   return (
     <main>
-      <section className="left">This is first</section>
+      <section className="left">
+        <LeftSidebar />
+      </section>
 
       <section className="right">
         <Header />
         <div className="articles">
           <article className="articles__cources">
-            <h1> Cources</h1>
+            <Cources />
           </article>
           <article className="articles__calender">
             <RightSidebar />
