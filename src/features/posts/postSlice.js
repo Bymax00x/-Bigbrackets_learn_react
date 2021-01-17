@@ -2,8 +2,18 @@ import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "@reduxjs/toolkit";
 
 const initialState = [
-  { id: nanoid(), title: "First post", content: "This is the first post" },
-  { id: nanoid(), title: "second post", content: "This is the second post" },
+  {
+    id: nanoid(),
+    title: "leadership: Practical Skills ",
+    aurther: "Demat 0 Conner",
+    level: "Beginner",
+  },
+  {
+    id: nanoid(),
+    title: "Digital Marketing",
+    aurther: "Leonardo D Caprio",
+    level: "Intermediate",
+  },
 ];
 
 const postSlice = createSlice({

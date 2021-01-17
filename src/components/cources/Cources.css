@@ -11,3 +11,17 @@ html {
   height: 100vh;
   padding: 1rem;
 }
+
+h1 {
+  padding-bottom: 1rem;
+}
+
+.posts__section {
+  display: flex;
+}
+.posts {
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
