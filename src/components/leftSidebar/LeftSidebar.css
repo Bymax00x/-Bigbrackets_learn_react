@@ -1,0 +1,28 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font: 10px;
+}
+.logo {
+  margin: 2rem;
+}
+
+.pages li,
+.files li {
+  list-style: none;
+  padding: 1rem 5rem 1.5rem 5rem;
+}
+.files {
+  border-top: 0.3rem solid #f9fafc;
+}
+.pages li a,
+.files li a {
+  text-decoration: none;
+  color: black;
+}
+
+.files h1 {
+  padding: 1rem 5rem 1.5rem 5rem;
+}
