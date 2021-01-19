@@ -14,6 +14,12 @@ const initialState = [
     aurther: "Leonardo D Caprio",
     level: "Intermediate",
   },
+  {
+    id: nanoid(),
+    title: "Advertising",
+    aurther: "Bhimsen Thapa",
+    level: "Expert",
+  },
 ];
 
 const postSlice = createSlice({
