@@ -30,10 +30,19 @@ const Cources = () => {
     return displayPost;
   };
 
+  let showPost = (
+    <div className="posts">
+      {posts.length - 2} more <br />
+      <a href="#"> show all</a>
+    </div>
+  );
+
   return (
     <div className="cources">
       <h1> Your cources</h1>
-      <div className="posts__section">{abstractPosts()}</div>
+      <div className="posts__section">
+        {abstractPosts()} {showPost}
+      </div>
     </div>
   );
 };
