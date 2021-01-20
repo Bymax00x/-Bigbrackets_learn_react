@@ -3,7 +3,7 @@ import Cources from "../cources/Cources";
 import Header from "../header/Header";
 import LeftSidebar from "../leftSidebar/LeftSidebar";
 import RightSidebar from "../RightSidebar";
-import "./Home.css";
+import "./Dashboard.css";
 
 const Home = () => {
   return (
