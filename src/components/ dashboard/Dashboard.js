@@ -2,7 +2,7 @@ import React from "react";
 import Cources from "../cources/Cources";
 import Header from "../header/Header";
 import LeftSidebar from "../leftSidebar/LeftSidebar";
-import RightSidebar from "../RightSidebar";
+import RightSidebar from "../rightSidebar/RightSidebar";
 import "./Dashboard.css";
 
 const Home = () => {
