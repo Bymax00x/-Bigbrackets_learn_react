@@ -1,0 +1,28 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font: 10px;
+}
+
+.cources {
+  background-color: #f9fafc;
+  height: 100vh;
+  padding: 1rem;
+}
+
+h1 {
+  padding-bottom: 1rem;
+}
+
+.posts__section {
+  display: flex;
+  flex-direction: row;
+}
+.posts {
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
