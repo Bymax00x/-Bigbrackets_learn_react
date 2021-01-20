@@ -26,18 +26,7 @@ const initialState = [
     aurther: "Bruce Wayne",
     level: "Expert",
   },
-  {
-    id: nanoid(),
-    title: "Sales",
-    aurther: "Bruce Wayne",
-    level: "Expert",
-  },
-  {
-    id: nanoid(),
-    title: "Sales",
-    aurther: "Bruce Wayne",
-    level: "Expert",
-  },
+  
 ];
 
 const postSlice = createSlice({
