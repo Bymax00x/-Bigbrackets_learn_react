@@ -39,7 +39,7 @@ const Cources = () => {
 
   return (
     <div className="cources">
-      <h1> Your cources</h1>
+      <h1> Your Courses</h1>
       <div className="posts__section">
         {abstractPosts()} {showPost}
       </div>
