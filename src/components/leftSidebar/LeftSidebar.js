@@ -16,7 +16,7 @@ const LeftSidebar = () => {
         </li>
 
         <li>
-          <a href="#">Lessons</a>
+          <a href="http://localhost:3000/lessons">Lessons</a>
         </li>
         <li>
           <a href="#">Resources</a>
