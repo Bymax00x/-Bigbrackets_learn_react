@@ -1,8 +1,8 @@
 import React from "react";
-import Cources from "../cources/Cources";
-import Header from "../header/Header";
-import LeftSidebar from "../leftSidebar/LeftSidebar";
-import RightSidebar from "../rightSidebar/RightSidebar";
+import Cources from "../../components/cources/Cources";
+import Header from "../../components/header/Header";
+import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
+import RightSidebar from "../../components/rightSidebar/RightSidebar";
 import "./Dashboard.css";
 
 const Home = () => {
