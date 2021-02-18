@@ -22,7 +22,7 @@ const LeftSidebar = () => {
           <a href="#">Resources</a>
         </li>
         <li>
-          <a href="#">My Courses</a>
+          <a href="http://localhost:3000/mycources">My Courses</a>
         </li>
         <li>
           <a href="#">Chat</a>
