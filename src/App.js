@@ -5,8 +5,9 @@ import Home from "./pages/ dashboard/Dashboard";
 import Lessons from "./pages/lessons/Lessons";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
-import Video from "./components/video/Video";
+import Video from "./pages/video/Video";
 import MyCources from "./pages/myCources/MyCources";
+import Rescource from "./pages/resources/Rescource";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/mycources">
           <MyCources />
+        </Route>
+        <Route path="/rescource">
+          <Rescource />
         </Route>
         <Route path="/">
           <Home />

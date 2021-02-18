@@ -1,6 +1,6 @@
 import React from "react";
 import "./LeftSidebar.css";
-
+import { Link } from "react-router-dom";
 const LeftSidebar = () => {
   return (
     <div className="main">
@@ -16,13 +16,13 @@ const LeftSidebar = () => {
         </li>
 
         <li>
-          <a href="http://localhost:3000/lessons">Lessons</a>
+          <Link to="/lessons">Lessons</Link>
         </li>
         <li>
-          <a href="#">Resources</a>
+          <Link to="/rescource">Rescource</Link>
         </li>
         <li>
-          <a href="http://localhost:3000/mycources">My Courses</a>
+          <Link to="/mycources">My Cources</Link>
         </li>
         <li>
           <a href="#">Chat</a>
