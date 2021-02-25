@@ -26,11 +26,13 @@ const NewCours = () => {
         <div class="contentSection">
           <div className="tab_head">
             <div className="tab_button">
-              <h1>Image here</h1>
+            <img src="Image/2.jpg"></img>
             </div>
             <div class="contentSection__info">
-              <h1>LeaderShip: Practical Skills</h1>
+            <a href='#' className="lead__css">
+              <h1>LeaderShip: Practical Skills</h1> </a>
               <p> Any structure</p>
+             
             </div>
             <div className="button_div">
               <button>View</button>
@@ -39,19 +41,34 @@ const NewCours = () => {
 
           <div className="tab_head">
             <div className="tab_button">
-              <h1>Image here</h1>
+              <img src="Image/1.jfif"></img>
             </div>
             <div class="contentSection__info">
-              <h1>LeaderShip: Digital Marketing</h1>
+            <a href='#' className="dig__css">
+              <h1>LeaderShip: Digital Marketing</h1> </a>
               <p> Digitial Works</p>
+             
             </div>
             <div className="button_div">
               <button>View</button>
             </div>
+            
           </div>
         </div>
       </div>
-    </div>
+         
+         <div className="sub__section">
+             <div className="sub__secction">
+             <a href='#' className="">
+                <p> Show 8 More</p>
+                </a>
+            </div>
+        </div>
+
+        </div>
+       
+        
+    
   );
 };
 
