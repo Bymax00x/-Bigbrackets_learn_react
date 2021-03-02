@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 
 const Test = () => {
-  const [value, setValue] = useState();
-  var formData = {};
-  const recordData = (e) => {
-    formData = {
-      ...formData,
-      [e.target.name]: e.target.value,
-    };
+  const [state, setState] = useState({ title: "", desc: "", url:"" });
+const handleChange = e => {
+    const { name, value } = e.target;
+    setState(prevState => ({
+        ...prevState,
+        [name]: value
+    }));
 
-    // setValue(e.target.name.value);
-    console.log(e.target.name);
-    console.log(formData);
-  };
+    console.log(state);
+};
+
   return (
     <div>
       <center>
@@ -20,9 +19,9 @@ const Test = () => {
           Title
           <input
             type="text"
-            name="first"
+            name="title"
             placeholder="Enter your name"
-            onChange={recordData}
+            onChange={handleChange}
           />
           <br />
           Description
@@ -30,7 +29,7 @@ const Test = () => {
             type="text"
             name="desc"
             placeholder="Enter your name"
-            onChange={recordData}
+            onChange={handleChange}
           />
           <br />
           Video url
@@ -38,10 +37,10 @@ const Test = () => {
             type="text"
             name="url"
             placeholder="Enter your name"
-            onChange={recordData}
+            onChange={handleChange}
           />
           <br />
-          <p> You have entered: {value}</p>
+        
           <br />
           <input type="button" value="click me" />
         </form>
@@ -51,3 +50,7 @@ const Test = () => {
 };
 
 export default Test;
+
+
+
+
