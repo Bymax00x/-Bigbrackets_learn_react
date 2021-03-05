@@ -1,0 +1,105 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font: 10px;
+}
+
+.div_in h1 {
+  margin-left: 25px;
+  padding: 5px;
+  margin-top: 8px;
+ 
+}
+.contentSection__info p{
+  margin-left: 27px;
+}
+
+.tab_head {
+  display: flex;
+  border-radius: 9px;
+  border-left: 5px solid yellow;
+  background-color: aliceblue;
+  /* padding: 5px 0px; */
+  border-radius: 10px;
+  margin: 5px;
+  height: 140px;
+  width: 850px;
+}
+
+.tab_button {
+  background-image: url('coffee.jpg');
+  background-color: white;
+  width: 30%;
+ 
+
+  margin-right: 20px;
+  border-radius: 10px;
+  /* border:1px solid red */
+}
+.button_div button {
+  align-items: right;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-left: 60px;
+  background-color: #f7cb15;
+  margin-right: 50px;
+}
+.button_div {
+  display: flex;
+  align-items: center;
+  padding-left: 145px;
+  padding-right: 20px;
+  width: 450px;
+  float: right;
+}
+.button_div :hover{
+    color: green;
+}
+.contentSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentSection__info {
+  width: 500px;
+}
+.sub_head{
+  padding: 20px;
+  background-color: aliceblue;
+
+}
+
+.sub__section{
+    display: flex;
+    padding: 10px;
+  background-color: aliceblue;
+   border-radius: 10px;
+   margin-top: 10px;
+    height: 40px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+
+.sub__section :hover{
+   color: green;
+}
+
+.lead__css{
+    text-decoration: none;
+    
+}
+.lead__css :hover{
+    color: green;
+}
+.dig__css{
+    text-decoration: none;
+}
+.dig__css :hover{
+    color: green;
+}
