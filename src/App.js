@@ -10,6 +10,7 @@ import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
 import Test from "./pages/test/Test";
 import Test01 from "./pages/test01/Test01";
+import VideoUpload from "./pages/videoUpload/VideoUpload";
 
 function App() {
   return (
@@ -33,8 +34,8 @@ function App() {
         <Route path="/rescource">
           <Rescource />
         </Route>
-        <Route path="/test">
-       <Test/>
+        <Route path="/vupload">
+       <VideoUpload/>
         </Route>
         <Route path="/">
           <Home />
