@@ -1,56 +1,51 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Test = () => {
-  const [state, setState] = useState({ title: "", desc: "", url:"" });
-const handleChange = e => {
-    const { name, value } = e.target;
-    setState(prevState => ({
-        ...prevState,
-        [name]: value
-    }));
+  // const jsxfirst = () => {
+  //   // const a = "<h1> this is a </h1>";
+  //   return (
+  //     <div>
+  //       <h1> This is sucess</h1>
+  //     </div>
+  //   );
+  // };
+  // const text = "this is text";
+  // return (
+  //   <div>
+  //     Alpha Testing
+  //     <h1> beta versions</h1>
+  //     {jsxfirst()}
+  //   </div>
+  // );
 
-    console.log(state);
-};
-
-  return (
-    <div>
-      <center>
-        <form>
-          Title
-          <input
-            type="text"
-            name="title"
-            placeholder="Enter your name"
-            onChange={handleChange}
-          />
-          <br />
-          Description
-          <input
-            type="text"
-            name="desc"
-            placeholder="Enter your name"
-            onChange={handleChange}
-          />
-          <br />
-          Video url
-          <input
-            type="text"
-            name="url"
-            placeholder="Enter your name"
-            onChange={handleChange}
-          />
-          <br />
-        
-          <br />
-          <input type="button" value="click me" />
-        </form>
-      </center>
-    </div>
-  );
+  const operation = () => {
+    let obj1 = {
+      title: "check5",
+      value: "value1",
+    };
+    let json1 = [
+      {
+        title: "check1",
+        value: "value1",
+      },
+      {
+        title: "check2",
+        value: "value1",
+      },
+      {
+        title: "check3",
+        value: "value1",
+      },
+      {
+        title: "check4",
+        value: "value1",
+      },
+    ];
+    let finalData = [...json1, obj1];
+    console.log(`The joson data ${json1}`);
+    console.log(finalData);
+  };
+  return <h1>Checking {operation()}</h1>;
 };
 
 export default Test;
-
-
-
-

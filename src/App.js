@@ -35,7 +35,10 @@ function App() {
           <Rescource />
         </Route>
         <Route path="/vupload">
-       <VideoUpload/>
+          <VideoUpload />
+        </Route>
+        <Route path="/test">
+          <Test />
         </Route>
         <Route path="/">
           <Home />
