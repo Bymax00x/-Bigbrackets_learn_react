@@ -9,6 +9,7 @@ import Video from "./pages/video/Video";
 import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
 
+
 function App() {
   return (
     <Router>

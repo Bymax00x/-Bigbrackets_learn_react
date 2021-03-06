@@ -25,8 +25,9 @@ const NewCours = () => {
         <h1> Ongoing-2</h1>
         <div class="contentSection">
           <div className="tab_head">
+          
             <div className="tab_button">
-            <img src="Image/2.jpg"></img>
+           
             </div>
             <div class="contentSection__info">
             <a href='#' className="lead__css">
@@ -41,7 +42,6 @@ const NewCours = () => {
 
           <div className="tab_head">
             <div className="tab_button">
-              <img src="Image/1.jfif"></img>
             </div>
             <div class="contentSection__info">
             <a href='#' className="dig__css">

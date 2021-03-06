@@ -6,17 +6,22 @@ html {
   font: 10px;
 }
 
-h1 {
+.div_in h1 {
+  margin-left: 25px;
   padding: 5px;
   margin-top: 8px;
+ 
+}
+.contentSection__info p{
+  margin-left: 27px;
 }
 
 .tab_head {
   display: flex;
   border-radius: 9px;
-  border-left: 3px solid yellow;
+  border-left: 5px solid yellow;
   background-color: aliceblue;
-  padding: 5px;
+  /* padding: 5px 0px; */
   border-radius: 10px;
   margin: 5px;
   height: 140px;
@@ -25,29 +30,33 @@ h1 {
 
 .tab_button {
   background-color: white;
-  width: 25%;
+  width: 30%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/css/Image/2.jpg');
+
   margin-right: 20px;
   border-radius: 10px;
   /* border:1px solid red */
 }
 .button_div button {
   align-items: right;
-  width: 80px;
-  height: 30px;
+  width: 100px;
+  height: 50px;
   border-radius: 10px;
-  color: black;
+  margin-top: 70px;
+  margin-left: 60px;
   background-color: #f7cb15;
-  border: 1px solid black;
   margin-right: 50px;
 }
 .button_div {
   display: flex;
   align-items: center;
-  /* padding-top: 40px; */
-  /* padding-bottom: 20px; */
   padding-left: 145px;
-  padding-right: 30px;
-  width: 300px;
+  padding-right: 20px;
+  width: 450px;
+  float: right;
 }
 .button_div :hover{
     color: green;
