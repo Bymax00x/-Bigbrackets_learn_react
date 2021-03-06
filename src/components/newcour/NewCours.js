@@ -25,14 +25,14 @@ const NewCours = () => {
         <h1> Ongoing-2</h1>
         <div class="contentSection">
           <div className="tab_head">
+          
             <div className="tab_button">
-            {/* <img src="./coffee.jpg" alt="no image availabe"></img> */}
+           
             </div>
             <div class="contentSection__info">
             <a href='#' className="lead__css">
               <h1>LeaderShip: Practical Skills</h1> </a>
               <p> Any structure</p>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
              
             </div>
             <div className="button_div">
@@ -42,13 +42,11 @@ const NewCours = () => {
 
           <div className="tab_head">
             <div className="tab_button">
-              {/* <img src="../../assets/Image/2.jpg"></img> */}
             </div>
             <div class="contentSection__info">
             <a href='#' className="dig__css">
               <h1>LeaderShip: Digital Marketing</h1> </a>
               <p> Digitial Works</p>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
              
             </div>
             <div className="button_div">
