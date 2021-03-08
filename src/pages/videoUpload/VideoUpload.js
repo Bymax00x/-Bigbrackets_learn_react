@@ -5,7 +5,7 @@ const VideoUpload = () => {
   const [state, setState] = useState({ title: "", desc: "", url: "" });
   const [vidoes, setVidoes] = useState([{ title: "", desc: "", url: "" }]);
   useEffect(() => {
-    showData();
+    // showData();
   }, []);
 
   const handleChange = (e) => {
@@ -40,7 +40,8 @@ const VideoUpload = () => {
         querySnapshot.forEach((doc) => {
           let data = doc.data();
           console.log("???", data);
-          setVidoes(vidoes.push(data));
+          // setVidoes(vidoes.push(data));
+          setVidoes([...vidoes, data]);
           // setVidoes([
           //   ...vidoes,
           //   {
