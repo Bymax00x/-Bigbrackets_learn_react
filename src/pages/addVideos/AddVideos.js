@@ -76,7 +76,7 @@ const AddVideos = () => {
           />
         </div>
         <button className="bttnSubmit half-width" onClick={addData}>
-          Sign in
+          Upload
         </button>
       </section>
       <section class="image-holder  right-part"> </section>
