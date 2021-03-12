@@ -32,7 +32,7 @@ const ALeftSidebar = () => {
       <section className="files">
         <h1> Admin Controls</h1>
         <li>
-          <a href="#">Upload Video</a>
+          <Link to="addVideos">Upload Video</Link>
         </li>
         <li>
           <a href="#">Add News</a>

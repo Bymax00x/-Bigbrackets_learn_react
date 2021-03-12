@@ -1,0 +1,37 @@
+.image-holder {
+  background-image: url("../../assets/css/Image/signup.png");
+  background-position: center;
+}
+
+.main-page {
+  height: 100vh;
+}
+
+.form-input input[type="text"],
+.form-input input[type="password"] {
+  width: 35rem;
+  border: none;
+  background-color: #f5cfb3;
+}
+
+.left-part {
+  width: 40%;
+}
+
+.left-part h1 {
+  font-size: 20px;
+  color: #f4712f;
+  font-weight: bold;
+}
+
+.right-part {
+  width: 60%;
+}
+
+.bttnSubmit {
+  background-color: #2b8535;
+  border-radius: 20px;
+  border: none;
+  padding: 12px;
+}
+/*# sourceMappingURL=Login.css.map */

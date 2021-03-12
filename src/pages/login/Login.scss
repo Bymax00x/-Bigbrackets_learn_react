@@ -1,0 +1,41 @@
+.image-holder{
+    background-image: url('../../assets/css/Image/signup.png');
+    // object-fit: contain;
+    background-position: center;
+}
+
+.main-page{
+    height: 100vh;
+}
+
+.form-input{
+    input[type="text"],
+    input[type="password"] {
+      width: 35rem;
+    //   border-radius: 1rem;
+      border: none;
+      background-color:#f5cfb3;
+    }
+    
+}
+
+.left-part{
+    width:40%;
+    h1{
+        font-size: 20px;
+        color: #f4712f;
+        font-weight: bold;
+    }
+}
+.right-part{
+    width: 60%;
+}
+
+.bttnSubmit{
+    background-color: rgb(43, 133, 53);
+    border-radius: 20px;
+    border:none;
+    padding:12px;
+
+    
+}
