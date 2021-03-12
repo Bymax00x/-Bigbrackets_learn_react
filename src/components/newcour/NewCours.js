@@ -3,24 +3,23 @@ import "./NewCours.css";
 import db from "../../components/firebase/firebase";
 const NewCours = () => {
   const [videos, setVideos] = useState([]);
+  useEffect(() => {
+    fetchData();
+  });
+  const fetchData = async () => {
+    const data = await db.collection("videos").get();
+    setVideos(data.docs.map((doc) => doc.data()));
+  };
 
   const check = () => {
     console.log("josn???", videos);
   };
+  const display = (
+    <h1>
+      This is test <span>first</span>
+    </h1>
+  );
 
-  let arr1 = [1, 2, 3, 4];
-
-  let dummydata = async () =>
-    await (
-      <div>
-        <h1> hello</h1>
-        {(videos &&
-          videos.map((data, key) => <li key={key}>{data.title}</li>)) ||
-          []}
-
-        <button onClick={check}>check</button>
-      </div>
-    );
   return (
     // <div>
     //   <div className="div_in">
@@ -64,21 +63,8 @@ const NewCours = () => {
     //   </div>
     // </div>
     <div>
-      {/* {videos.map(([key, val]) => (
-        <h2 key={key}>
-          {key}: {val.title}
-        </h2>
-      ))} */}
       <div>
-        <h1> hello</h1>
-        {(videos && Object.values(videos)) || (
-          <div>
-            <h1>Loading data</h1>
-          </div>
-        )}
-        {/* {(videos &&
-          videos?.map((data, key) => <li key={key}>{data.title}</li>)) ||
-          "Loading dataa"} */}
+        {display}
 
         <button onClick={check}>check</button>
       </div>

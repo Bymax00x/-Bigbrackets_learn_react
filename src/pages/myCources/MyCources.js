@@ -6,7 +6,6 @@ import RightSidebar from "../../components/rightSidebar/RightSidebar";
 import "./MyCourses.css";
 import NewCours from "../../components/newcour/NewCours";
 
-
 const MyCources = () => {
   return (
     <main>
@@ -29,4 +28,4 @@ const MyCources = () => {
   );
 };
 
-export default  MyCources;
+export default MyCources;
