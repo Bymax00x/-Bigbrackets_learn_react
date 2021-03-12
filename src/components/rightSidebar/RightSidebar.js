@@ -10,12 +10,16 @@ const RightSidebar = () => {
     setDate(date);
   };
   return (
+    <>
     <div>
       <Calendar showWeekNumbers onChange ={onChange} value={date}/>
       {date.toString()}
     
     </div>
+    <div> <h1> Sumit Maharjan</h1></div>
+    </>
   );
 };
+
 
 export default RightSidebar;

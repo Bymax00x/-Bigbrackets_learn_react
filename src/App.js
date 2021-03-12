@@ -8,6 +8,7 @@ import Signup from "./pages/signup/Signup";
 import Video from "./pages/video/Video";
 import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
+import Landing from "./pages/Landing/Landing";
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route path="/rescource">
           <Rescource />
+        </Route>
+        <Route path="/landing">
+          <Landing />
         </Route>
         <Route path="/">
           <Home />

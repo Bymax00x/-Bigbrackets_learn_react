@@ -25,7 +25,7 @@ const LeftSidebar = () => {
           <Link to="/mycources">My Cources</Link>
         </li>
         <li>
-          <a href="#">Chat</a>
+          <a href="#">Notification</a>
         </li>
         <li>
           <a href="#">Settings</a>

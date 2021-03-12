@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.nav_bar{
+    padding: 16px;
+    background-color: orange;
+    text-decoration: none;
+
+}
+.heading{
+    display: flex;
+    justify-content: right;
+ 
+    justify-content: space-around;
+    
+    
+}
+.heading h1 a{
+    
+    color:black;
+    text-decoration: none;
+    justify-content: center;
+    justify-content: right;
+    font-size: 24px;
+    
+}
+.heading h1 a:hover{
+    color:#68687a;
+}
+.heading button{
+    border-radius: 16px;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    height:50px;
+    background: black;
+    border: none;
+}
