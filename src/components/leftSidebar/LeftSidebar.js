@@ -18,15 +18,18 @@ const LeftSidebar = () => {
         <li>
           <Link to="/lessons">Lessons</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/rescource">Rescource</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="/mycources">My Cources</Link>
-        </li>
+        </li> */}
 
         <li>
           <a href="#">Req Videos</a>
+        </li>
+        <li>
+          <a href="#">Add Notices</a>
         </li>
 
         <li>

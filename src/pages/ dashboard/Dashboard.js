@@ -1,7 +1,8 @@
 import React from "react";
-import Cources from "../../components/cources/Cources";
+// import Cources from "../../components/cources/Cources";
 import Header from "../../components/header/Header";
 import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
+import Notice from "../../components/notice/Notice";
 import RightSidebar from "../../components/rightSidebar/RightSidebar";
 import "./Dashboard.css";
 
@@ -16,7 +17,7 @@ const Home = () => {
         <Header />
         <div className="articles">
           <article className="articles__cources">
-            <Cources />
+            <Notice />
           </article>
           <article className="articles__calender">
             <RightSidebar />

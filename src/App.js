@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/ dashboard/Dashboard";
 import Lessons from "./pages/lessons/Lessons";
-import Login from "./pages/login/Login";
+// import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
@@ -18,9 +18,9 @@ function App() {
         <Route path="/lessons">
           <Lessons />
         </Route>
-        <Route path="/login">
+        {/* <Route path="/login">
           <Login />
-        </Route>
+        </Route> */}
         <Route path="/signup">
           <Signup />
         </Route>
@@ -36,9 +36,9 @@ function App() {
         <Route path="/test">
           <Test01 />
         </Route>
-        <Route path="/login">
+        {/* <Route path="/login">
           <Login />
-        </Route>
+        </Route> */}
         <Route path="/">
           <Home />
         </Route>
