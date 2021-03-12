@@ -13,7 +13,7 @@ const Landing = () => {
             <h1> <a href="#">Contact</a></h1>
             <h1> <a href="#">Career</a></h1>
             <h1> <a href="#">Blog</a></h1>
-            <button onClick={()=>history.push("/mycources")}> Get Started</button>
+            <button onClick={()=>history.push("/Home")}> Get Started</button>
             </div>
         </div>
        
