@@ -2,9 +2,9 @@ import React from "react";
 import "./Header.css";
 
 import SearchIcon from "@material-ui/icons/Search";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import EmailIcon from "@material-ui/icons/Email";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+// import NotificationsIcon from "@material-ui/icons/Notifications";
+// import EmailIcon from "@material-ui/icons/Email";
+// import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 const Header = () => {
   return (
@@ -17,9 +17,9 @@ const Header = () => {
       </div>
 
       <span className="grupi">
-        <NotificationsIcon />
+        {/* <NotificationsIcon />
         <EmailIcon />
-        <AccountCircleIcon />
+        <AccountCircleIcon /> */}
       </span>
     </header>
   );

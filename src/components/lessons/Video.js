@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { YoutubePlayer } from "reactjs-media";
 import db from "../../components/firebase/firebase";
 import "../../assets/css/layout.css";
-
+import "./Video.css";
 const Video = () => {
   const [videos, setVideos] = useState([]);
   useEffect(() => {
@@ -15,17 +15,22 @@ const Video = () => {
 
   return (
     <main>
-      <section>
+      <section className="pa-md ">
         {videos.map((data, index) => (
-          <section key={index}>
-            <div>
+          <section key={index} className="flex">
+            <div className="flex items-center">
               <YoutubePlayer
                 src={data.url} // Reqiured
-                width={400}
-                height={200}
+                width={250}
+                height={150}
+                allowFullScreen
               />
             </div>
-            <div>{data.title}</div>
+            <div className="pa-lg vid-desc ">
+              <div className="pb-sm bold "> {data.title} </div>
+              <div className="pb-sm bold">{data.category}</div>
+              <div className="pb-sm">{data.desc}</div>
+            </div>
           </section>
         ))}
       </section>

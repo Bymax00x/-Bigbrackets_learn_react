@@ -1,7 +1,7 @@
 import React from "react";
 import "./LeftSidebar.css";
 import { Link } from "react-router-dom";
-const LeftSidebar = () => {
+const ALeftSidebar = () => {
   return (
     <div className="main">
       <div className="logo">
@@ -26,33 +26,20 @@ const LeftSidebar = () => {
         </li>
 
         <li>
-          <a href="#">Req Videos</a>
-        </li>
-
-        <li>
-          <Link to="/login">Settings</Link>
+          <a href="#">Settings</a>
         </li>
       </section>
-      {/* <section className="files">
-        <h1> My Files</h1>
+      <section className="files">
+        <h1> Admin Controls</h1>
         <li>
-          <a href="#">Assets</a>
+          <a href="#">Upload Video</a>
         </li>
         <li>
-          <a href="#">Templates</a>
+          <a href="#">Add News</a>
         </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-        <li>
-          <a href="#">Documents</a>
-        </li>
-        <li>
-          <a href="#">Downloads</a>
-        </li>
-      </section> */}
+      </section>
     </div>
   );
 };
 
-export default LeftSidebar;
+export default ALeftSidebar;

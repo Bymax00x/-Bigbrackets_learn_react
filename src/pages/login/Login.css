@@ -1,0 +1,24 @@
+
+.login{
+
+}
+.login-header{
+    font-size:20px;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.login-detail{
+    font-size:14px;
+    text-align: center;
+
+}
+.designer{
+    background-color: lightblue;
+}
+
+input{
+    padding: 100px;
+}
