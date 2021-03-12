@@ -36,7 +36,7 @@ function App() {
         <Route path="/landing">
           <Landing />
         </Route>
-        <Route path="/">
+        <Route path="/home">
           <Home />
         </Route>
       </Switch>
