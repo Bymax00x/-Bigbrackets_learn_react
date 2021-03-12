@@ -1,14 +1,16 @@
 import React from "react";
 import Cources from "../../components/cources/Cources";
 import Header from "../../components/header/Header";
-import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
+import ALeftSidebar from "../../components/leftSidebar/ALeftSidebar";
+// import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
 import Video from "../../components/lessons/Video";
 
 const Lessons = () => {
   return (
     <main>
       <section className="left">
-        <LeftSidebar />
+        {/* <LeftSidebar /> */}
+        <ALeftSidebar />
       </section>
       <section className="right">
         <Header />

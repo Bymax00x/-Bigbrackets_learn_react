@@ -18,16 +18,6 @@ const ALeftSidebar = () => {
         <li>
           <Link to="/lessons">Lessons</Link>
         </li>
-        <li>
-          <Link to="/rescource">Rescource</Link>
-        </li>
-        <li>
-          <Link to="/mycources">My Cources</Link>
-        </li>
-
-        <li>
-          <a href="#">Settings</a>
-        </li>
       </section>
       <section className="files">
         <h1> Admin Controls</h1>
@@ -35,7 +25,7 @@ const ALeftSidebar = () => {
           <Link to="addVideos">Upload Video</Link>
         </li>
         <li>
-          <a href="#">Add News</a>
+          <Link to="noticeUpload">Add News</Link>
         </li>
       </section>
     </div>

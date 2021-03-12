@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import db from "../../components/firebase/firebase";
 import "./AddVideos.css";
 
 const AddVideos = () => {
   const [state, setState] = useState({ title: "", desc: "", url: "" });
-  const [videos, setVideos] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

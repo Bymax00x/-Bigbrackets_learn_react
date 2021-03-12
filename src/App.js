@@ -11,6 +11,7 @@ import Test from "./pages/test/Test";
 import Test01 from "./pages/test01/Test01";
 import VideoUpload from "./pages/videoUpload/VideoUpload";
 import AddVideos from "./pages/addVideos/AddVideos";
+import NoticeUpload from "./pages/noticeUpload/NoticeUpload";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route path="/addVideos">
           <AddVideos />
+        </Route>
+        <Route path="/noticeUpload">
+          <NoticeUpload />
         </Route>
         <Route path="/">
           <Home />
