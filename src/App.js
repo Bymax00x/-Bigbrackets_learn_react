@@ -12,7 +12,6 @@ import Test from "./pages/test/Test";
 import Test01 from "./pages/test01/Test01";
 import VideoUpload from "./pages/videoUpload/VideoUpload";
 
-
 function App() {
   return (
     <Router>
@@ -39,7 +38,7 @@ function App() {
           <VideoUpload />
         </Route>
         <Route path="/test">
-          <Test />
+          <Test01 />
         </Route>
         <Route path="/">
           <Home />

@@ -3,10 +3,7 @@ import db from "../../components/firebase/firebase";
 
 const VideoUpload = () => {
   const [state, setState] = useState({ title: "", desc: "", url: "" });
-  const [vidoes, setVidoes] = useState([{ title: "", desc: "", url: "" }]);
-  useEffect(() => {
-    // showData();
-  }, []);
+  const [videos, setVideos] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,42 +29,49 @@ const VideoUpload = () => {
       });
   };
 
-  const showData = () => {
-    console.log("working");
-    db.collection("videos")
-      .get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          let data = doc.data();
-          console.log("???", data);
-          // setVidoes(vidoes.push(data));
-          setVidoes([...vidoes, data]);
-          // setVidoes([
-          //   ...vidoes,
-          //   {
-          //     title: doc.data().title,
-          //     desc: doc.data().desc,
-          //     url: doc.data().url,
-          //   },
-          // ]);
-        });
-        console.log(vidoes);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await db.collection("videos").get();
+      setVideos(data.docs.map((doc) => doc.data()));
+    };
+    fetchData();
+  });
 
-        return <p> This is after showwdata</p>;
-      });
-
-    //specific vid display
-    // db.collection("videos").doc("iTo0H48fPr70QZiaGuYv").get().then((doc) => {
-    //     if (doc.exists) {
-    //         console.log("Document data:", doc.data());
-    //     } else {
-    //         // doc.data() will be undefined in this case
-    //         console.log("No such document!");
-    //     }
-    // }).catch((error) => {
-    //     console.log("Error getting document:", error);
-    // });
+  const displayData = () => {
+    console.log(videos);
   };
+
+  // useEffect(() => {
+  //   showData();
+  // }, []);
+
+  // const showData = () => {
+  //   console.log("working");
+  //   db.collection("videos")
+  //     .get()
+  //     .then((querySnapshot) => {
+  //       querySnapshot.forEach((doc) => {
+  //         let data = doc.data();
+  //         console.log("???", data);
+  //         setVidoes(vidoes.push(data));
+  //       });
+  //       console.log("check", vidoes);
+
+  //       return <p> This is after showwdata</p>;
+  //     });
+
+  //specific vid display
+  // db.collection("videos").doc("iTo0H48fPr70QZiaGuYv").get().then((doc) => {
+  //     if (doc.exists) {
+  //         console.log("Document data:", doc.data());
+  //     } else {
+  //         // doc.data() will be undefined in this case
+  //         console.log("No such document!");
+  //     }
+  // }).catch((error) => {
+  //     console.log("Error getting document:", error);
+  // });
+  // };
 
   const check = () => {
     return <h1>this is check</h1>;
@@ -108,7 +112,7 @@ const VideoUpload = () => {
       <div>
         <h1> :: The Video Databases ::</h1>
         <p>{check}</p>
-        <button onClick={showData}>Show Databases</button>
+        <button onClick={displayData}>Show Databases</button>
       </div>
     </div>
   );
