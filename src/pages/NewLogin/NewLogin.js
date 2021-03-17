@@ -1,9 +1,9 @@
 import React from "react";
 import firebase from "firebase";
-import "./Test.css";
+import "./NewLogin.css";
 import logo from "../../assets/css/Image/logo.png";
 
-const Test = () => {
+const NewLogin = () => {
   var provider = new firebase.auth.GoogleAuthProvider();
 
   const check = () => {
@@ -34,6 +34,14 @@ const Test = () => {
         console.log(error.message);
         // ...
       });
+
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        console.log("user is logged in");
+      } else {
+        console.log("user is not logged in");
+      }
+    });
   };
   const logOut = () => {
     firebase
@@ -49,8 +57,8 @@ const Test = () => {
 
   return (
     <main className="flex column  items-center ">
-      <nav className="flex  items-center justify-center ">
-        <img src={logo} className="logo" alt="image not available" />
+      <nav className="flex header items-center justify-center ">
+        <img src={logo} className="logo__img" alt="image not available" />
         <div className="title">
           <span className="title-first"> Big </span> Brackets
         </div>
@@ -77,4 +85,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default NewLogin;

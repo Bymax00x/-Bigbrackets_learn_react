@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/ dashboard/Dashboard";
 import Lessons from "./pages/lessons/Lessons";
-import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
@@ -12,6 +11,7 @@ import Test01 from "./pages/test01/Test01";
 import VideoUpload from "./pages/videoUpload/VideoUpload";
 import AddVideos from "./pages/addVideos/AddVideos";
 import NoticeUpload from "./pages/noticeUpload/NoticeUpload";
+import NewLogin from "./pages/NewLogin/NewLogin";
 
 function App() {
   return (
@@ -36,14 +36,17 @@ function App() {
         <Route path="/test">
           <Test />
         </Route>
-        <Route path="/login">
-          <Login />
-        </Route>
         <Route path="/addVideos">
           <AddVideos />
         </Route>
         <Route path="/noticeUpload">
           <NoticeUpload />
+        </Route>
+        <Route path="/noticeUpload">
+          <NoticeUpload />
+        </Route>
+        <Route path="/login">
+          <NewLogin />
         </Route>
         <Route path="/">
           <Home />
