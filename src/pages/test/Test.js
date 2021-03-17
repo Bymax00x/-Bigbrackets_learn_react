@@ -1,51 +1,59 @@
 import React from "react";
+import firebase from "firebase";
 
 const Test = () => {
-  // const jsxfirst = () => {
-  //   // const a = "<h1> this is a </h1>";
-  //   return (
-  //     <div>
-  //       <h1> This is sucess</h1>
-  //     </div>
-  //   );
-  // };
-  // const text = "this is text";
-  // return (
-  //   <div>
-  //     Alpha Testing
-  //     <h1> beta versions</h1>
-  //     {jsxfirst()}
-  //   </div>
-  // );
+  var provider = new firebase.auth.GoogleAuthProvider();
 
-  const operation = () => {
-    let obj1 = {
-      title: "check5",
-      value: "value1",
-    };
-    let json1 = [
-      {
-        title: "check1",
-        value: "value1",
-      },
-      {
-        title: "check2",
-        value: "value1",
-      },
-      {
-        title: "check3",
-        value: "value1",
-      },
-      {
-        title: "check4",
-        value: "value1",
-      },
-    ];
-    let finalData = [...json1, obj1];
-    console.log(`The joson data ${json1}`);
-    console.log(finalData);
+  const check = () => {
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        console.log("user is logged in");
+      } else {
+        console.log("user is not logged in");
+      }
+    });
   };
-  return <h1>Checking {operation()}</h1>;
+
+  const signIn = () => {
+    console.log("singin working");
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then((result) => {
+        /** @type {firebase.auth.OAuthCredential} */
+        var credential = result.credential;
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        // ...
+      })
+      .catch((error) => {
+        console.log(error.message);
+        // ...
+      });
+  };
+  const logOut = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        console.log("logged out sucessfully");
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
+
+  return (
+    <div>
+      This is test <br />
+      <button onClick={signIn}>signin</button>
+      <button onClick={check}> check login status</button>
+      <br />
+      <button onClick={logOut}>Sign Out</button>
+    </div>
+  );
 };
 
 export default Test;

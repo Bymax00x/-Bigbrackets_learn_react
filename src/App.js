@@ -34,7 +34,7 @@ function App() {
           <VideoUpload />
         </Route>
         <Route path="/test">
-          <Test01 />
+          <Test />
         </Route>
         <Route path="/login">
           <Login />
