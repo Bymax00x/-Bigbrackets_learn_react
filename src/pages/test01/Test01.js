@@ -4,15 +4,14 @@ import db from "../../components/firebase/firebase";
 import firebase from "firebase";
 
 const Test01 = () => {
-  const user = firebase.auth().currentUser;
-  // const auth = firebase.auth();
+  var user = firebase.auth().currentUser;
+  const auth = firebase.auth();
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   // const [user, setUser] = useState(() => auth.currentUser);
 
-  const { uid, displayName, photoURL } = user;
+  // const { uid, displayName, photoURL } = user;
 
-  console.log(">>>>>>>>>>>>>", user);
   useEffect(() => {
     if (db) {
       const unsubscribe = db
@@ -30,6 +29,15 @@ const Test01 = () => {
       return unsubscribe;
     }
   }, [db]);
+
+  // firebase.auth().onAuthStateChanged(function (user) {
+  //   if (user) {
+  //     console.log("user is logged in");
+  //     console.log(user.uid);
+  //   } else {
+  //     console.log("user is not logged in");
+  //   }
+  // });
 
   // const [videos, setVideos] = useState([]);
   // useEffect(() => {
@@ -60,12 +68,14 @@ const Test01 = () => {
       db.collection("messages").add({
         text: newMessage,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-        uid,
-        displayName,
-        photoURL,
+        uid: user.uid,
+        displayName: user.displayName,
+        photoURL: user.photoURL,
       });
     }
   };
+
+  // console.log(">>>>>>>>>>>>>", user.uid);
 
   return (
     <>
