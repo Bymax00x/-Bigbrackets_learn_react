@@ -9,6 +9,8 @@ import Video from "./pages/video/Video";
 import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
 import Landing from "./pages/Landing/Landing";
+import Rating from "./pages/rating/Rating";
+
 
 
 function App() {
@@ -35,8 +37,12 @@ function App() {
         </Route>
         <Route path="/landing">
           <Landing />
+         
         </Route>
-        <Route path="/home">
+        <Route path="/rating">
+          <Rating />
+        </Route>
+        <Route path="/">
           <Home />
         </Route>
       </Switch>
