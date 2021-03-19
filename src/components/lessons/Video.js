@@ -15,21 +15,27 @@ const Video = () => {
 
   return (
     <main>
-      <section className="pa-md ">
+      <section className="pa-md  ">
         {videos.map((data, index) => (
-          <section key={index} className="flex">
-            <div className="flex items-center">
-              <YoutubePlayer
-                src={data.url} // Reqiured
-                width={250}
-                height={150}
-                allowFullScreen
-              />
+          <section key={index} className="flex column">
+            <div className="flex">
+              <div className="flex items-center">
+                <YoutubePlayer
+                  src={data.url} // Reqiured
+                  width={250}
+                  height={150}
+                  allowFullScreen
+                />
+              </div>
+              <div className="pa-lg vid-desc ">
+                <div className="pb-sm bold "> {data.title} </div>
+                <div className="pb-sm bold">{data.category}</div>
+                <div className="pb-sm">{data.desc}</div>
+              </div>
             </div>
-            <div className="pa-lg vid-desc ">
-              <div className="pb-sm bold "> {data.title} </div>
-              <div className="pb-sm bold">{data.category}</div>
-              <div className="pb-sm">{data.desc}</div>
+            <div className="flex">
+              <input className="mb-md" type="text" placeholder="comment" />
+              <button>send</button>
             </div>
           </section>
         ))}
