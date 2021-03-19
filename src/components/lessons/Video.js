@@ -33,10 +33,10 @@ const Video = () => {
                 <div className="pb-sm">{data.desc}</div>
               </div>
             </div>
-            <div className="flex">
+            {/* <div className="flex">
               <input className="" type="text" placeholder="comment" />
               <button className="px-lg py-sm ">send</button>
-            </div>
+            </div> */}
           </section>
         ))}
       </section>
