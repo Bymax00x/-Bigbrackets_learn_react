@@ -13,18 +13,19 @@ const RightSidebar = () => {
   };
   return (
     <>
-    <div>
-      <Calendar showWeekNumbers onChange ={onChange} value={date}/>
-      {date.toString()}
-    
-    </div>
-    <div class="style_h1">
+     <div class="style_h1">
      <div class="heading_h1">
       <h1> We <span>Craft</span> Your <span>Imaginations</span></h1>
     </div>
      <img src={big2}></img>
     </div>
 
+    <div class="calander">
+      <Calendar showWeekNumbers onChange ={onChange} value={date}/>
+      {date.toString()}
+    
+    </div>
+   
 
     </>
   );
