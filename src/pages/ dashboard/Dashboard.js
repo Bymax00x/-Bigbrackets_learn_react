@@ -49,7 +49,7 @@ const Home = () => {
       <section className="left">
         <button onClick={check}>check</button>
         {/* {access ? <ALeftSidebar /> : <LeftSidebar />} */}
-        {/* <LeftSidebar /> */}
+        <ALeftSidebar />
       </section>
 
       <section className="right">

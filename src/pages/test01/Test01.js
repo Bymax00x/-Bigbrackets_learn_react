@@ -1,23 +1,9 @@
 import React, { useState, useEffect } from "react";
+import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
 import "./test01.css";
-import db from "../../components/firebase/firebase";
 
 const Test01 = () => {
-  const [videos, setVideos] = useState([]);
-  useEffect(() => {
-    fetchData();
-  });
-  const fetchData = async () => {
-    const data = await db.collection("videos").get();
-    setVideos(data.docs.map((doc) => doc.data()));
-  };
-  return (
-    <ul>
-      {videos.map((data) => (
-        <li key={data.title}>{data.title}</li>
-      ))}
-    </ul>
-  );
+  return <LeftSidebar />;
 };
 
 export default Test01;

@@ -5,37 +5,39 @@ import db from "../../components/firebase/firebase";
 import firebase from "firebase";
 
 const LeftSidebar = () => {
-  var adminUser = ["runalmanandhar@gmail.com", "ravi@gmail.com"];
-  const [admin, setAdmin] = useState([]);
-  const [access, setAccess] = useState(false);
-  useEffect(() => {
-    fetchData();
-    checkUser();
-  }, []);
+  // var adminUser = ["runalmanandhar@gmail.com", "ravi@gmail.com"];
+  // const [admin, setAdmin] = useState([]);
+  // const [access, setAccess] = useState(false);
+  // useEffect(() => {
+  //   fetchData();
+  //   checkUser();
+  // }, []);
 
-  const fetchData = async () => {
-    const data = await db.collection("admin").get();
-    setAdmin(data.docs.map((doc) => doc.data()));
-  };
+  // const fetchData = async () => {
+  //   const data = await db.collection("admin").get();
+  //   setAdmin(data.docs.map((doc) => doc.data()));
+  // };
 
-  const checkUser = () => {
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        console.log("user is logged in");
-        adminUser.forEach((aUser) => {
-          if (user.email == aUser) {
-            setAccess(true);
-          } else {
-            console.log(access);
-          }
-        });
-      } else {
-        console.log("user is not logged in");
-      }
-    });
-  };
+  // const checkUser = () => {
+  //   firebase.auth().onAuthStateChanged(function (user) {
+  //     if (user) {
+  //       console.log("user is logged in");
+  //       adminUser.forEach((aUser) => {
+  //         if (user.email == aUser) {
+  //           setAccess(true);
+  //         } else {
+  //           console.log(access);
+  //         }
+  //       });
+  //     } else {
+  //       console.log("user is not logged in");
+  //     }
+  //   });
+  // };
 
-  const leftSidebar = () => {
+  var access = true;
+
+  const Sidebar = () => {
     return (
       <>
         <div className="main">
@@ -102,6 +104,8 @@ const LeftSidebar = () => {
       </>
     );
   };
+
+  access ? Sidebar() : aSideBar();
 
   return {
     /* <section className="files">
