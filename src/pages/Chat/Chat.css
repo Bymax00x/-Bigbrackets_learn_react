@@ -1,0 +1,41 @@
+.chat-header{
+    font-size: 30px;
+    font-weight: bold;
+    
+    border-bottom: 4px solid #f1c40f ;
+}
+
+.chat-header-desc{
+    font-size: 15px;
+    /* font-weight: normal; */
+    margin-top: 15px;
+    color:#f1c40f;
+    
+}
+
+.chat-img{
+    border-radius: 50px;
+}
+
+.chat-name{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.chat-date{
+    font-size: 15px;
+}
+
+.message{
+    /* border-bottom: 1px solid #f1c40f; */
+}
+.chat-sys{
+    /* border:1px solid #f1c40f;; */
+}
+
+.bttn-send{
+    border:none;
+    background-color:lightblue;
+    border-radius: 5px;
+}

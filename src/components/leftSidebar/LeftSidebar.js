@@ -74,7 +74,7 @@ const LeftSidebar = () => {
   return (
     <>
       {access ? (
-        <div className="main">
+        <div className="main fixed-top">
           <div className="logo">
             <h1> E-learning Academy</h1>
           </div>
@@ -97,6 +97,9 @@ const LeftSidebar = () => {
             </li>
             <li>
               <Link to="/noticeUpload">Add News</Link>
+            </li>
+            <li>
+              <Link to="/chat">Chat</Link>
             </li>
             <li>
               <button className="bttn__logout" onClick={logout}>
@@ -128,7 +131,9 @@ const LeftSidebar = () => {
             <li>
               <a href="#">Add Notices</a>
             </li>
-
+            <li>
+              <Link to="/chat">Chat</Link>
+            </li>
             <li>
               <button className="bttn__logout" onClick={logout}>
                 Logout

@@ -3,8 +3,9 @@ import Cources from "../../components/cources/Cources";
 import Header from "../../components/header/Header";
 import LeftSidebar from "../../components/leftSidebar/LeftSidebar";
 import RightSidebar from "../../components/rightSidebar/RightSidebar";
+import Chat from "../Chat/Chat";
 import "./MyCourses.css";
-import NewCours from "../../components/newcour/NewCours";
+// import NewCours from "../../components/newcour/NewCours";
 
 const MyCources = () => {
   return (
@@ -17,7 +18,7 @@ const MyCources = () => {
         <Header />
         <div className="articles">
           <article className="articles__cources">
-            <NewCours />
+            <Chat />
           </article>
           <article className="articles__calender">
             <RightSidebar />

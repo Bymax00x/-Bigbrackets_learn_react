@@ -7,7 +7,7 @@ import Signup from "./pages/signup/Signup";
 import MyCources from "./pages/myCources/MyCources";
 import Rescource from "./pages/resources/Rescource";
 import Test from "./pages/test/Test";
-import Test01 from "./pages/test01/Test01";
+import Chat from "./pages/Chat/Chat";
 import VideoUpload from "./pages/videoUpload/VideoUpload";
 import AddVideos from "./pages/addVideos/AddVideos";
 import NoticeUpload from "./pages/noticeUpload/NoticeUpload";
@@ -37,7 +37,7 @@ function App() {
             <VideoUpload />
           </Route>
           <Route path="/test">
-            <Test01 />
+            <Chat />
           </Route>
           <Route path="/addVideos">
             <AddVideos />
@@ -53,6 +53,9 @@ function App() {
           </Route>
           <Route path="/dashboard">
             <Dashboard />
+          </Route>
+          <Route path="/chat">
+            <MyCources />
           </Route>
           <Route path="/">
             <NewLogin />
