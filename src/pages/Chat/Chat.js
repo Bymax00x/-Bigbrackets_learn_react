@@ -55,13 +55,13 @@ const Chat = () => {
           Discuss about the problems and topics here
         </span>
       </div>
-      <div3>
+      <div className="mt-md">
         {messages.map((message) => (
           <div className="mb-md chat-desc" key={message.id}>
             <Message {...message} />
           </div>
         ))}
-      </div3>
+      </div>
 
       <form onSubmit={handleOnSubmit} className="mb-md">
         <input

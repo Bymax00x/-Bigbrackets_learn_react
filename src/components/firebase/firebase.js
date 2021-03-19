@@ -22,17 +22,6 @@ import firebase from "firebase";
 //   measurementId: "G-6KETVP5FPX",
 // };
 
-//third
-const firebaseConfig = {
-  apiKey: "AIzaSyDcLlBaL8z3zlns_As_aiDNDoAzqZxDowo",
-  authDomain: "backup01-elearning.firebaseapp.com",
-  projectId: "backup01-elearning",
-  storageBucket: "backup01-elearning.appspot.com",
-  messagingSenderId: "1031173759453",
-  appId: "1:1031173759453:web:2be08688e775d411085634",
-  measurementId: "G-HKN4W2XNSN",
-};
-
 //demo database
 
 // const firebaseConfig = {
@@ -44,6 +33,18 @@ const firebaseConfig = {
 //   appId: "1:388174675173:web:47c2aa68582ad4cbc6e80c",
 //   measurementId: "G-QNJB2J7L5K",
 // };
+
+// demo01
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDG1wHdqGAHayH3452LsZvXE8062lckpn0",
+  authDomain: "e-learning-demo01.firebaseapp.com",
+  projectId: "e-learning-demo01",
+  storageBucket: "e-learning-demo01.appspot.com",
+  messagingSenderId: "182294410880",
+  appId: "1:182294410880:web:b8b8bb96761c24adf7d865",
+  measurementId: "G-NN8HKBLVL0",
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
