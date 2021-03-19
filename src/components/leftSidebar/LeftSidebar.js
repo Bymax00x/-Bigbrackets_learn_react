@@ -7,7 +7,11 @@ import firebase from "firebase";
 
 const LeftSidebar = () => {
   var history = useHistory();
-  var adminUser = ["runalmanandhar@gmail.com", "ravi@gmail.com"];
+  var adminUser = [
+    "runalmanandhar@gmail.com",
+    "ravi@gmail.com",
+    "sumitmaharjan94@gmail.com",
+  ];
   const [admin, setAdmin] = useState([]);
   const [access, setAccess] = useState(false);
   useEffect(() => {
