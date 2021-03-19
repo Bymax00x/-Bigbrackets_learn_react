@@ -2,9 +2,12 @@ import React from "react";
 import firebase from "firebase";
 import "./NewLogin.css";
 import logo from "../../assets/css/Image/logo.png";
+import { useHistory } from "react-router-dom";
+import { Dashboard } from "@material-ui/icons";
 
 const NewLogin = () => {
   var provider = new firebase.auth.GoogleAuthProvider();
+  var history = useHistory();
 
   const check = () => {
     firebase.auth().onAuthStateChanged(function (user) {
@@ -17,6 +20,7 @@ const NewLogin = () => {
   };
 
   const login = () => {
+    var access = false;
     console.log("singin working");
     firebase
       .auth()
@@ -38,6 +42,8 @@ const NewLogin = () => {
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
         console.log("user is logged in");
+        // return <Redirect to="/dashboard" />;
+        history.push("/dashboard");
       } else {
         console.log("user is not logged in");
       }
@@ -79,8 +85,8 @@ const NewLogin = () => {
       {/* This is test <br />
       <button onClick={signIn}>signin</button>
       <button onClick={check}> check login status</button>
-      <br />
-      <button onClick={logOut}>Sign Out</button> */}
+      <br /> */}
+      <button onClick={logOut}>Sign Out</button>
     </main>
   );
 };

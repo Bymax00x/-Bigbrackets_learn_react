@@ -10,7 +10,7 @@ const ALeftSidebar = () => {
 
       <section className="pages">
         <li>
-          <Link to="/" className="active">
+          <Link to="/dashboard" className="active">
             News Feed
           </Link>
         </li>
