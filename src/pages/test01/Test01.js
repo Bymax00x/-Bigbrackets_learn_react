@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./test01.css";
 import db from "../../components/firebase/firebase";
 import firebase from "firebase";
+import Message from "./Message";
 
 const Test01 = () => {
   var user = firebase.auth().currentUser;
@@ -81,7 +82,9 @@ const Test01 = () => {
     <>
       <ul>
         {messages.map((message) => (
-          <li key={message.id}>{message.text}</li>
+          <li key={message.id}>
+            <Message {...message} />
+          </li>
         ))}
       </ul>
       {/* 
