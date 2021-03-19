@@ -1,0 +1,20 @@
+h1{
+    padding-top: 20px;
+}
+
+.date_entry{
+    padding-top: 10px;
+}
+
+.style_h1{
+    margin-top: 10px;
+}
+
+.heading_h1 h1{
+    font-size: 20px;
+    
+}
+.heading_h1 span{
+    color: orange;
+    font-size: 30px;
+}
