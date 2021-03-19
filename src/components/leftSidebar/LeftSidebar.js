@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./LeftSidebar.css";
 import { Link } from "react-router-dom";
 import db from "../../components/firebase/firebase";
+import { useHistory } from "react-router-dom";
 import firebase from "firebase";
 
 const LeftSidebar = () => {
+  var history = useHistory();
   var adminUser = ["runalmanandhar@gmail.com", "ravi@gmail.com"];
   const [admin, setAdmin] = useState([]);
   const [access, setAccess] = useState(false);
@@ -34,6 +36,21 @@ const LeftSidebar = () => {
         console.log("user is not logged in");
       }
     });
+  };
+
+  const logout = () => {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        console.log("logged out sucessfully");
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+    history.push("/");
+
+    console.log("logut");
   };
 
   // return {
@@ -76,13 +93,15 @@ const LeftSidebar = () => {
           <section className="files">
             <h1> Admin Controls</h1>
             <li>
-              <Link to="addVideos">Upload Video</Link>
+              <Link to="/addVideos">Upload Video</Link>
             </li>
             <li>
-              <Link to="noticeUpload">Add News</Link>
+              <Link to="/noticeUpload">Add News</Link>
             </li>
             <li>
-              <button>Logout</button>
+              <button className="bttn__logout" onClick={logout}>
+                Logout
+              </button>
             </li>
           </section>
         </div>
@@ -111,7 +130,9 @@ const LeftSidebar = () => {
             </li>
 
             <li>
-              <button>Logout</button>
+              <button className="bttn__logout" onClick={logout}>
+                Logout
+              </button>
             </li>
           </section>
         </div>

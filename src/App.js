@@ -55,7 +55,6 @@ function App() {
             <Dashboard />
           </Route>
           <Route path="/">
-            {/* <Home /> */}
             <NewLogin />
           </Route>
         </Switch>

@@ -86,7 +86,7 @@ const NewLogin = () => {
       <button onClick={signIn}>signin</button>
       <button onClick={check}> check login status</button>
       <br /> */}
-      <button onClick={logOut}>Sign Out</button>
+      {/* <button onClick={logOut}>Sign Out</button> */}
     </main>
   );
 };

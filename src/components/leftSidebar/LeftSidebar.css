@@ -26,3 +26,10 @@ html {
 .files h1 {
   padding: 1rem 5rem 1.5rem 5rem;
 }
+
+.bttn__logout{
+  border:none;
+  cursor: pointer;
+  background-color: white;
+  font-size: medium;
+}

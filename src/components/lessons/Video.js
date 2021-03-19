@@ -17,7 +17,7 @@ const Video = () => {
     <main>
       <section className="pa-md  ">
         {videos.map((data, index) => (
-          <section key={index} className="flex column">
+          <section key={index} className="flex column mb-sm">
             <div className="flex">
               <div className="flex items-center">
                 <YoutubePlayer
@@ -34,8 +34,8 @@ const Video = () => {
               </div>
             </div>
             <div className="flex">
-              <input className="mb-md" type="text" placeholder="comment" />
-              <button>send</button>
+              <input className="" type="text" placeholder="comment" />
+              <button className="px-lg py-sm ">send</button>
             </div>
           </section>
         ))}
