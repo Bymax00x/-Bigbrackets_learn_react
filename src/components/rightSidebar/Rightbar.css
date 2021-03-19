@@ -1,0 +1,29 @@
+h1{
+    padding-top: 20px;
+}
+
+.date_entry{
+    padding-top: 10px;
+}
+.style_h1 img{
+display: flex;
+width: 80%;
+background-position: center;
+ background-size: cover;
+background-repeat: no-repeat;
+background-image: url('../../assets/css/Image/big2.jpg');
+width:98%;
+height: 31vh;
+margin-top: 5px;
+ 
+  border-radius: 10px;
+}
+.style_h2 h1{
+    color:black;
+
+}
+.style_h2 span{
+    color: orange;
+    font-weight: bolder;
+    font-size: 30px;
+}
