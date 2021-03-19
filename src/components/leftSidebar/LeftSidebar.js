@@ -128,9 +128,7 @@ const LeftSidebar = () => {
             <li>
               <a href="#">Req Videos</a>
             </li>
-            <li>
-              <a href="#">Add Notices</a>
-            </li>
+
             <li>
               <Link to="/chat">Chat</Link>
             </li>
