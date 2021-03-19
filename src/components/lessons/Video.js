@@ -7,7 +7,7 @@ const Video = () => {
   const [videos, setVideos] = useState([]);
   useEffect(() => {
     fetchData();
-  });
+  }, [db]);
   const fetchData = async () => {
     const data = await db.collection("videos").get();
     setVideos(data.docs.map((doc) => doc.data()));

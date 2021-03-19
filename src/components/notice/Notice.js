@@ -6,7 +6,7 @@ const Notice = () => {
   const [notices, setNotices] = useState([]);
   useEffect(() => {
     fetchData();
-  });
+  }, [db]);
   const fetchData = async () => {
     const data = await db.collection("notices").get();
     setNotices(data.docs.map((doc) => doc.data()));
