@@ -14,6 +14,7 @@ import NoticeUpload from "./pages/noticeUpload/NoticeUpload";
 import NewLogin from "./pages/NewLogin/NewLogin";
 import { Provider } from "react-redux";
 import store from "./app/store";
+import ReqVid from "./pages/reqVid/ReqVid";
 
 function App() {
   return (
@@ -56,6 +57,9 @@ function App() {
           </Route>
           <Route path="/chat">
             <MyCources />
+          </Route>
+          <Route path="/reqvid">
+            <ReqVid />
           </Route>
           <Route path="/">
             <NewLogin />
