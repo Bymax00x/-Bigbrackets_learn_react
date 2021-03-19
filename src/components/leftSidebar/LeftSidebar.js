@@ -102,6 +102,9 @@ const LeftSidebar = () => {
               <Link to="/chat">Chat</Link>
             </li>
             <li>
+              <Link to="/vidNoti">Req Vid Notification</Link>
+            </li>
+            <li>
               <button className="bttn__logout" onClick={logout}>
                 Logout
               </button>
@@ -126,7 +129,7 @@ const LeftSidebar = () => {
             </li>
 
             <li>
-              <a href="#">Req Videos</a>
+              <Link to="/reqVid">Req Videos</Link>
             </li>
 
             <li>
