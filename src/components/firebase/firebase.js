@@ -46,6 +46,15 @@ const firebaseConfig = {
   measurementId: "G-NN8HKBLVL0",
 };
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDYdXLyoTh52ZWmfkVWaADlHvBk6MbEEd8",
+//   authDomain: "e-learning-demo02.firebaseapp.com",
+//   projectId: "e-learning-demo02",
+//   storageBucket: "e-learning-demo02.appspot.com",
+//   messagingSenderId: "460955105803",
+//   appId: "1:460955105803:web:c6dbefd8c7c6856bb8250e",
+//   measurementId: "G-NMMCLSV6T0"
+// }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
